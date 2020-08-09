@@ -5,6 +5,17 @@ body{
     padding: 0;
     background-color: $bg-color;
     color: $font-color;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+a{
+    color: $font-color;
+    text-decoration: none;
+    &:hover{
+        color: $font-color;
+        text-decoration: none;
+    }
 }
 
 *,

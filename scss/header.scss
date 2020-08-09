@@ -1,0 +1,86 @@
+@import "colors";
+
+//HEADER
+.header {
+    display: flex;
+    align-items: center;
+}
+
+//NAVIGATION
+.navbar-nav {
+    flex-direction: column!important;
+}
+
+.nav-item {
+    margin: 10px;
+}
+
+.nav-link {
+    color: $font-color;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: $header-link-bg-color;
+    border-radius: 50%;
+    transition: 0.1s linear all;
+
+    .nav-link-text {
+        display: none;
+        white-space: nowrap;
+        margin-left: 8px;
+    }
+
+    &:hover {
+        background-color: $primary-color;
+        width: 100%;
+        border-radius: 70px;
+        justify-content: space-around;
+        .nav-link-text {
+            display: inline;
+        }
+    }
+}
+
+//TOGGLE BTN
+.toggler-icon {
+    color: white;
+    font-size: 25px;
+}
+
+.navbar-toggler {
+    &:focus {
+        outline: none;
+        .toggler-icon {
+            color: $primary-color;
+        }
+    }
+}
+
+//MEDIA
+@media (max-width: 991px) {
+    .header {
+        align-items: flex-start;
+    }
+
+    .navbar {
+        flex-wrap: nowrap;
+        height: 100px;
+    }
+
+    .navbar-nav {
+        flex-direction: row!important;
+    }
+
+    .nav-link:hover {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        justify-content: center;
+        .nav-link-text {
+            display: none;
+        }
+    }
+}
