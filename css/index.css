@@ -27,6 +27,11 @@ a:hover {
   align-items: center;
 }
 
+.header-active {
+  height: 100vh;
+  background-color: black;
+}
+
 .navbar-nav {
   flex-direction: column !important;
 }
@@ -51,6 +56,7 @@ a:hover {
   display: none;
   white-space: nowrap;
   margin-left: 8px;
+  text-transform: uppercase;
 }
 .nav-link:hover {
   background-color: orange;
@@ -67,35 +73,58 @@ a:hover {
   font-size: 25px;
 }
 
+.navbar-toggler {
+  margin: 10px;
+}
 .navbar-toggler:focus {
   outline: none;
 }
-.navbar-toggler:focus .toggler-icon {
-  color: orange;
-}
 
 @media (max-width: 991px) {
+  header {
+    width: 100%;
+  }
+
   .header {
     align-items: flex-start;
+    position: fixed;
+    padding: 0;
+    z-index: 1000;
   }
 
   .navbar {
-    flex-wrap: nowrap;
-    height: 100px;
+    flex-direction: row-reverse;
+    padding: 0;
   }
 
-  .navbar-nav {
-    flex-direction: row !important;
+  .nav-item {
+    margin: 0;
+    border-bottom: 1px solid rgba(82, 81, 81, 0.5);
   }
 
+  .nav-item:last-child {
+    border: none;
+  }
+
+  .nav-link {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: black;
+    border-radius: 0%;
+    padding-left: 22px !important;
+  }
+  .nav-link .nav-link-text {
+    display: inline;
+  }
   .nav-link:hover {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    justify-content: center;
+    background-color: orange;
+    width: 100%;
+    border-radius: 0px;
+    justify-content: flex-start;
   }
   .nav-link:hover .nav-link-text {
-    display: none;
+    display: inline;
   }
 }
 .intro {
@@ -151,7 +180,7 @@ a:hover {
 @media (max-width: 991px) {
   .intro {
     display: flex;
-    align-content: flex-start;
+    align-content: center;
   }
 
   .intro-img::after {
