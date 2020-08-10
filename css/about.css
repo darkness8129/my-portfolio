@@ -36,6 +36,10 @@ a:hover {
   flex-direction: column !important;
 }
 
+.navbar-collapse {
+  margin-top: 15px;
+}
+
 .nav-item {
   margin: 10px;
 }
