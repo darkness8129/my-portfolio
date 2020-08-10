@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-.header-active{
+.header_active{
     height: 100vh;
     background-color:black;
 }
@@ -34,7 +34,7 @@
     .nav-link-text {
         display: none;
         white-space: nowrap;
-        margin-left: 8px;
+        margin: 0 12px;
         text-transform: uppercase;
     }
 
@@ -50,15 +50,53 @@
 }
 
 //TOGGLE BTN
-.toggler-icon {
-    color: white;
-    font-size: 25px;
-}
-
 .navbar-toggler {
-    margin: 10px;
+    margin: 20px 10px;
     &:focus {
         outline: none;
+    }
+}
+
+.toggler-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: relative;
+    transition: .5s linear all;
+    
+    &::before{
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        transition: .3s linear all;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 14px;
+        left: 0;
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        transition: .3s linear all;
+    }
+}
+
+.toggler-icon_active{
+    transform: rotate(405deg) translate(5px, 5px);
+    
+    &::before{
+        display: none;
+    }
+
+    &::after{
+        transform: rotate(-90deg) translate(14px, 0px);
     }
 }
 
