@@ -1,8 +1,15 @@
 @import "colors";
 //HEADER
-.header {
+.header-wrapper {
+    height: 100%;
     display: flex;
     align-items: center;
+    position: fixed;
+    z-index: 1000;
+}
+
+header{
+    position: fixed;
 }
 
 .header_active{
@@ -11,12 +18,12 @@
 }
 
 //NAVIGATION
-.navbar-nav {
-    flex-direction: column!important;
+.navbar{
+    padding: 0;
 }
 
-.navbar-collapse{
-    margin-top: 15px;
+.navbar-nav {
+    flex-direction: column!important;
 }
 
 .nav-item {
@@ -110,16 +117,18 @@
         width: 100%;
     }
 
-    .header {
+    .header-wrapper {
+        height: 0;
         align-items: flex-start;
-        position: fixed;
         padding: 0;
-        z-index: 1000;
+    }
+
+    .navbar-collapse{
+        margin-top: 15px;
     }
 
     .navbar{
         flex-direction: row-reverse;
-        padding: 0;
     }
 
     .nav-item{

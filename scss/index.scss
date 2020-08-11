@@ -1,11 +1,13 @@
 @import "reset";
 @import "colors";
 @import "header";
+@import "general";
 
 //INTRO
 .intro {
     height: 100%;
     padding: 30px 15px;
+    justify-content: flex-end;
 }
 
 .intro-img {
@@ -36,10 +38,6 @@
     margin: 10px 0;
     font-size: 25px;
     font-family: monospace;
-}
-
-.my-name {
-    color: $primary-color;
 }
 
 .about-me-btn {

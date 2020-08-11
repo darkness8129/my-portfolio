@@ -22,9 +22,16 @@ a:hover {
   box-sizing: border-box;
 }
 
-.header {
+.header-wrapper {
+  height: 100%;
   display: flex;
   align-items: center;
+  position: fixed;
+  z-index: 1000;
+}
+
+header {
+  position: fixed;
 }
 
 .header_active {
@@ -32,12 +39,12 @@ a:hover {
   background-color: black;
 }
 
-.navbar-nav {
-  flex-direction: column !important;
+.navbar {
+  padding: 0;
 }
 
-.navbar-collapse {
-  margin-top: 15px;
+.navbar-nav {
+  flex-direction: column !important;
 }
 
 .nav-item {
@@ -123,16 +130,18 @@ a:hover {
     width: 100%;
   }
 
-  .header {
+  .header-wrapper {
+    height: 0;
     align-items: flex-start;
-    position: fixed;
     padding: 0;
-    z-index: 1000;
+  }
+
+  .navbar-collapse {
+    margin-top: 15px;
   }
 
   .navbar {
     flex-direction: row-reverse;
-    padding: 0;
   }
 
   .nav-item {
@@ -164,4 +173,12 @@ a:hover {
   .nav-link:hover .nav-link-text {
     display: inline;
   }
+}
+.highlighted-text {
+  color: orange;
+}
+
+.title {
+  font-size: 60px;
+  margin: 50px 0;
 }
