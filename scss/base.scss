@@ -1,0 +1,66 @@
+@import "colors";
+body{
+    background-color: $bg-color;
+    color: $font-color;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+a{
+    color: $font-color;
+    text-decoration: none;
+    &:hover{
+        color: $font-color;
+    }
+}
+
+.highlighted-text {
+    color: $primary-color;
+}
+
+.title{
+    font-size: 60px;
+    margin: 50px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .title-bg{
+        content:'Resume';
+        position: absolute;
+        color: $transperent-gray;
+        font-weight: 900;
+        font-size: 110px;
+        line-height: .5;
+        z-index: -1;
+    }
+}
+
+.subtitle{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.button {
+    display: inline-block;
+    background-color: $primary-color;
+    border-radius: 20px;
+    padding: 10px 40px;
+    font-weight: bold;
+    transition: 0.2s linear all;
+
+    &:hover {
+        color: $primary-color;
+        background-color: white;
+    }
+}
+
+.delimiter{
+    border-top: 1px solid $transperent-gray;
+    max-width: 50%;
+    width: 100%;
+    margin: 50px auto;
+}

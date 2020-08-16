@@ -1,5 +1,155 @@
 @import "reset";
 @import "colors";
 @import "header";
-@import "general";
+@import "base";
 
+.info-list {
+    list-style: none;
+
+    li {
+        margin-top: 15px;
+    }
+}
+
+.info-title {
+    color: gray;
+}
+
+.achievement {
+    width: 100%;
+    height: 150px;
+    border: 1px solid $transperent-gray;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+@mixin skill($gradients...) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        z-index: -1;
+        background-color: gray;
+        background-image: $gradients;
+    }
+}
+
+.skill-70 {
+    @include skill(
+        linear-gradient(90deg, transparent 50%, $primary-color 50%),
+        linear-gradient(162deg, transparent 50%, $primary-color 50%)
+    );
+}
+
+.skill-75 {
+    @include skill(
+        linear-gradient(90deg, transparent 50%, $primary-color 50%),
+        linear-gradient(180deg, transparent 50%, $primary-color 50%)
+    );
+}
+
+.skill-60 {
+    @include skill(
+        linear-gradient(90deg, transparent 50%, $primary-color 50%),
+        linear-gradient(126deg, transparent 50%, $primary-color 50%)
+    );
+}
+
+.skill-50 {
+    @include skill(
+        linear-gradient(90deg, transparent 50%, $primary-color 50%),
+        linear-gradient(90deg, transparent 50%, $primary-color 50%)
+    );
+}
+
+.skill-40 {
+    @include skill(linear-gradient(234deg, transparent 50%, gray 50%), linear-gradient(90deg, gray 50%, orange 50%));
+}
+
+.skill-number {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+.skill-title {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.exp-ed-icon {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    position: relative;
+
+    &::after {
+        content: "";
+        height: 75px;
+        width: 1px;
+        position: absolute;
+        background-color: $transperent-gray;
+        left: 18px;
+        top: 36px;
+    }
+}
+
+.time-text {
+    background-color: $transperent-gray;
+    display: inline-block;
+    font-size: 13px;
+    padding: 5px 10px;
+    opacity: 0.9;
+    border-radius: 20px;
+}
+
+.activity-text {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+}
+.descr-text {
+    font-size: 15px;
+}
+
+.achievement-num {
+    font-size: 50px;
+    font-weight: bold;
+    color: $primary-color;
+}
+
+.achievement-title {
+    font-family: monospace;
+    display: block;
+    margin-left: 25px;
+    position: relative;
+    text-transform: uppercase;
+
+    &::before{
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 2px;
+        background-color: $transperent-gray;
+        top: 50%;
+        margin-top: -2px;
+        left: -40px;
+    }
+}
