@@ -27,7 +27,6 @@ a{
     align-items: center;
 
     .title-bg{
-        content:'Resume';
         position: absolute;
         color: $transperent-gray;
         font-weight: 900;
@@ -63,4 +62,10 @@ a{
     max-width: 50%;
     width: 100%;
     margin: 50px auto;
+}
+
+@media (max-width: 575px) {
+    .title{
+        display: none;
+    }
 }

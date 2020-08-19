@@ -2,6 +2,7 @@
 @import "colors";
 @import "header";
 @import "base";
+@import "mixins";
 
 .info-list {
     list-style: none;
@@ -22,30 +23,6 @@
     margin-bottom: 30px;
     border-radius: 5px;
     padding: 20px 30px;
-}
-
-@mixin skill($gradients...) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: black;
-    position: relative;
-    margin: 0 auto;
-    margin-top: 50px;
-
-    &::before {
-        content: "";
-        position: absolute;
-        width: 125px;
-        height: 125px;
-        border-radius: 50%;
-        z-index: -1;
-        background-color: gray;
-        background-image: $gradients;
-    }
 }
 
 .skill-70 {

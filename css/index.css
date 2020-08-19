@@ -20,17 +20,25 @@ ul {
   box-sizing: border-box;
 }
 
-header {
+.header {
   position: fixed;
   top: 50%;
-  margin-top: -175px;
+  margin-top: -140px;
   z-index: 1000;
 }
 
 .header_active {
-  width: 100%;
+  display: block !important;
   height: 100vh;
-  background-color: black;
+  background-color: #1c1c1b;
+}
+
+.header-title-mobile {
+  display: none;
+  font-size: 25px;
+  margin-left: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .navbar {
@@ -74,7 +82,8 @@ header {
 }
 
 .navbar-toggler {
-  margin: 20px 10px;
+  margin: 20px;
+  padding: 12px 12px 24px 12px;
 }
 .navbar-toggler:focus {
   outline: none;
@@ -120,8 +129,11 @@ header {
 }
 
 @media (max-width: 991px) {
-  header {
-    right: 0;
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
     top: 0;
     margin: 0;
   }
@@ -147,7 +159,7 @@ header {
     display: flex;
     justify-content: flex-start;
     width: 100%;
-    background-color: black;
+    background-color: #1c1c1b;
     border-radius: 0%;
     padding-left: 22px !important;
   }
@@ -162,6 +174,16 @@ header {
   }
   .nav-link:hover .nav-link-text {
     display: inline;
+  }
+}
+@media (max-width: 575px) {
+  .header {
+    background-color: #1c1c1b;
+    justify-content: space-between;
+  }
+
+  .header-title-mobile {
+    display: block;
   }
 }
 body {
@@ -192,7 +214,6 @@ a:hover {
   align-items: center;
 }
 .title .title-bg {
-  content: "Resume";
   position: absolute;
   color: rgba(82, 81, 81, 0.5);
   font-weight: 900;
@@ -228,6 +249,11 @@ a:hover {
   margin: 50px auto;
 }
 
+@media (max-width: 575px) {
+  .title {
+    display: none;
+  }
+}
 .intro {
   height: 100%;
   padding: 30px 15px;
