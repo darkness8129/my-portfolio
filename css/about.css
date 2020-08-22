@@ -81,9 +81,15 @@ ul {
   display: inline;
 }
 
+.nav-link_active {
+  background-color: orange !important;
+}
+
 .navbar-toggler {
   margin: 20px;
-  padding: 12px 12px 24px 12px;
+  padding: 12px 12px 25px 12px;
+  background-color: rgba(82, 81, 81, 0.5);
+  transition: 0.3s linear all;
 }
 .navbar-toggler:focus {
   outline: none;
@@ -119,13 +125,13 @@ ul {
 }
 
 .toggler-icon_active {
-  transform: rotate(405deg) translate(5px, 5px);
+  transform: translate(0px, 7px) rotate(405deg);
 }
 .toggler-icon_active::before {
   display: none;
 }
 .toggler-icon_active::after {
-  transform: rotate(-90deg) translate(14px, 0px);
+  transform: translate(0px, -14px) rotate(-90deg);
 }
 
 @media (max-width: 991px) {
@@ -274,6 +280,24 @@ a:hover {
   padding: 20px 30px;
 }
 
+.achievement-title {
+  font-family: monospace;
+  display: block;
+  margin-left: 25px;
+  position: relative;
+  text-transform: uppercase;
+}
+.achievement-title::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: rgba(82, 81, 81, 0.5);
+  top: 50%;
+  margin-top: -2px;
+  left: -40px;
+}
+
 .skill-70 {
   display: flex;
   justify-content: center;
@@ -405,6 +429,7 @@ a:hover {
 
 .exp-ed-block {
   border-left: 1px solid rgba(82, 81, 81, 0.5);
+  margin: 0 10px;
 }
 
 .exp-ed-icon {
@@ -416,7 +441,7 @@ a:hover {
   border-radius: 50%;
   background-color: orange;
   position: absolute;
-  left: -20px;
+  left: -10px;
   z-index: 10;
 }
 
@@ -445,24 +470,6 @@ a:hover {
   font-size: 40px;
   font-weight: bold;
   color: orange;
-}
-
-.achievement-title {
-  font-family: monospace;
-  display: block;
-  margin-left: 25px;
-  position: relative;
-  text-transform: uppercase;
-}
-.achievement-title::before {
-  position: absolute;
-  content: "";
-  width: 30px;
-  height: 2px;
-  background-color: rgba(82, 81, 81, 0.5);
-  top: 50%;
-  margin-top: -2px;
-  left: -40px;
 }
 
 @media (max-width: 767px) {

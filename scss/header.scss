@@ -1,4 +1,3 @@
-@import "colors";
 //HEADER
 .header {
     position: fixed;
@@ -64,10 +63,16 @@
     }
 }
 
+.nav-link_active{
+    background-color: $primary-color!important;
+}
+
 //TOGGLE BTN
 .navbar-toggler {
     margin: 20px;
-    padding: 12px 12px 24px 12px;
+    padding: 12px 12px 25px 12px;
+    background-color: $transperent-gray;
+    transition: 0.3s linear all;
 
     &:focus {
         outline: none;
@@ -106,19 +111,20 @@
 }
 
 .toggler-icon_active {
-    transform: rotate(405deg) translate(5px, 5px);
+    transform: translate(0px, 7px) rotate(405deg);
 
     &::before {
         display: none;
     }
 
     &::after {
-        transform: rotate(-90deg) translate(14px, 0px);
+        transform: translate(0px, -14px) rotate(-90deg) ;
     }
 }
 
 //MEDIA
 @media (max-width: 991px) {
+    //HEADER
     .header {
         display: flex;
         justify-content:flex-end;
@@ -128,6 +134,7 @@
         margin: 0;
     }
 
+    //NAVIGATION
     .navbar-collapse {
         margin-top: 15px;
     }
@@ -170,6 +177,7 @@
 }
 
 @media (max-width: 575px) {
+    //HEADER
     .header{
         background-color: $header-mobile-bg;
         justify-content: space-between;

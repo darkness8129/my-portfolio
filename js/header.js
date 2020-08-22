@@ -1,6 +1,9 @@
 $(document).ready(function(){
     $('.navbar-toggler').on('click', function(){
-        $( '.header' ).toggleClass( 'header_active' );   
+        //header fullscreen
+        $( '.header' ).toggleClass( 'header_active' ); 
+
+        //for burger animation 
         $('.toggler-icon').toggleClass('toggler-icon_active');   
 
         //for header title when header active
