@@ -403,20 +403,21 @@ a:hover {
   text-transform: uppercase;
 }
 
+.exp-ed-block {
+  border-left: 1px solid rgba(82, 81, 81, 0.5);
+}
+
 .exp-ed-icon {
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: orange;
-  position: relative;
-}
-.exp-ed-icon::after {
-  content: "";
-  height: 75px;
-  width: 1px;
   position: absolute;
-  background-color: rgba(82, 81, 81, 0.5);
-  left: 18px;
-  top: 36px;
+  left: -20px;
+  z-index: 10;
 }
 
 .time-text {
@@ -426,6 +427,7 @@ a:hover {
   padding: 5px 10px;
   opacity: 0.9;
   border-radius: 20px;
+  margin-left: 10px;
 }
 
 .activity-text {
@@ -436,10 +438,11 @@ a:hover {
 
 .descr-text {
   font-size: 15px;
+  margin-bottom: 0;
 }
 
 .achievement-num {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   color: orange;
 }
@@ -460,4 +463,22 @@ a:hover {
   top: 50%;
   margin-top: -2px;
   left: -40px;
+}
+
+@media (max-width: 767px) {
+  .achievement-title {
+    margin-left: 0;
+  }
+  .achievement-title::before {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .info-title {
+    display: block;
+  }
+
+  .subtitle:nth-child(1) {
+    margin-top: 100px !important;
+  }
 }

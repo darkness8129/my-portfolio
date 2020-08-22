@@ -16,7 +16,7 @@ $(document).ready(function(){
     $(window).on('resize', function(){
         if(window.innerWidth > 575){
             $('.header-title-mobile').css('display', 'none');
-        }else{
+        }else if(!$('.header').hasClass('header_active')){
             $('.header-title-mobile').css('display', 'block');
         }
     });
