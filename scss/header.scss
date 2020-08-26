@@ -69,9 +69,9 @@
 
 //TOGGLE BTN
 .navbar-toggler {
-    margin: 20px;
-    padding: 12px 12px 25px 12px;
-    background-color: $transperent-gray;
+    margin: 10px;
+    padding: 10px 10px 23px 10px;
+    background-color: #1c1c1b;
     transition: 0.3s linear all;
 
     &:focus {
@@ -135,10 +135,6 @@
     }
 
     //NAVIGATION
-    .navbar-collapse {
-        margin-top: 15px;
-    }
-
     .navbar {
         flex-direction: row-reverse;
     }

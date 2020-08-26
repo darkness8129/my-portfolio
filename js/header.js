@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $('.navbar-toggler').on('click', function(){
+        
         //header fullscreen
         $( '.header' ).toggleClass( 'header_active' ); 
 

@@ -86,9 +86,9 @@ ul {
 }
 
 .navbar-toggler {
-  margin: 20px;
-  padding: 12px 12px 25px 12px;
-  background-color: rgba(82, 81, 81, 0.5);
+  margin: 10px;
+  padding: 10px 10px 23px 10px;
+  background-color: #1c1c1b;
   transition: 0.3s linear all;
 }
 .navbar-toggler:focus {
@@ -142,10 +142,6 @@ ul {
     width: 100%;
     top: 0;
     margin: 0;
-  }
-
-  .navbar-collapse {
-    margin-top: 15px;
   }
 
   .navbar {
@@ -258,5 +254,44 @@ a:hover {
 @media (max-width: 575px) {
   .title {
     display: none;
+  }
+}
+.project-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.project-card:hover .project-card-title {
+  opacity: 1;
+}
+.project-card:hover .project-card-img img {
+  opacity: 0;
+}
+
+.project-card-img {
+  background-color: orange;
+  border-radius: 20px;
+}
+.project-card-img img {
+  border-radius: 20px;
+  display: block;
+  width: 100%;
+  transition: 0.2s linear opacity;
+}
+
+.project-card-title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  opacity: 0;
+  transition: 0.2s all linear;
+}
+
+@media (max-width: 575px) {
+  .portfolio-block {
+    padding-top: 100px;
   }
 }
