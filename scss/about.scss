@@ -1,8 +1,8 @@
-@import "reset";
-@import "colors";
-@import "header";
-@import "base";
-@import "mixins";
+@import 'reset';
+@import 'colors';
+@import 'header';
+@import 'base';
+@import 'mixins';
 
 //PERSONAL INFO
 .info-list {
@@ -10,11 +10,11 @@
 
     li {
         margin-top: 15px;
-    }
-}
 
-.info-title {
-    color: gray;
+        span:first-child {
+            color: gray;
+        }
+    }
 }
 
 //RECTANGLES
@@ -27,6 +27,12 @@
     padding: 20px 30px;
 }
 
+.achievement-num {
+    font-size: 40px;
+    font-weight: bold;
+    color: $primary-color;
+}
+
 .achievement-title {
     font-family: monospace;
     display: block;
@@ -34,7 +40,7 @@
     position: relative;
     text-transform: uppercase;
 
-    &::before{
+    &::before {
         position: absolute;
         content: '';
         width: 30px;
@@ -76,13 +82,10 @@
 }
 
 .skill-40 {
-    @include skill(linear-gradient(234deg, transparent 50%, gray 50%), linear-gradient(90deg, gray 50%, orange 50%));
-}
-
-.skill-number {
-    font-weight: bold;
-    font-size: 25px;
-    text-align: center;
+    @include skill(
+        linear-gradient(234deg, transparent 50%, gray 50%),
+        linear-gradient(90deg, gray 50%, $primary-color 50%)
+    );
 }
 
 .skill-title {
@@ -94,10 +97,9 @@
 }
 
 //EXPERIENCE AND EDUCATION
-.exp-ed-block{
+.exp-ed-block {
     border-left: 1px solid $transperent-gray;
     margin: 0 10px;
-    
 }
 
 .exp-ed-icon {
@@ -111,7 +113,6 @@
     position: absolute;
     left: -10px;
     z-index: 10;
-
 }
 
 .time-text {
@@ -128,25 +129,24 @@
     text-transform: uppercase;
     font-size: 18px;
     font-weight: bold;
+
+    span {
+        opacity: 0.8;
+        font-weight: normal;
+    }
 }
 .descr-text {
     font-size: 15px;
     margin-bottom: 0;
 }
 
-.achievement-num {
-    font-size: 40px;
-    font-weight: bold;
-    color: $primary-color;
-}
-
 //MEDIA
 @media (max-width: 767px) {
     //RECTANGLES
-    .achievement-title{
+    .achievement-title {
         margin-left: 0;
 
-        &::before{
+        &::before {
             display: none;
         }
     }
@@ -154,11 +154,11 @@
 
 @media (max-width: 575px) {
     //PERSONAL INFO
-    .info-title{
+    .info-title {
         display: block;
     }
 
-    .subtitle:nth-child(1){
-        margin-top: 100px!important;
+    .subtitle:nth-child(1) {
+        margin-top: 100px !important;
     }
 }

@@ -1,53 +1,53 @@
-@import "reset";
-@import "colors";
-@import "header";
-@import "base";
+@import 'reset';
+@import 'colors';
+@import 'header';
+@import 'base';
 
 //PROJECTS CARDS
-.project-card{
+.project-card {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
     cursor: pointer;
-    
-    &:hover{
-        .project-card-title{
+
+    &:hover {
+        .project-card-title {
             opacity: 1;
         }
 
-        .project-card-img{
-            img{
+        .project-card-img {
+            img {
                 opacity: 0;
             }
         }
     }
 }
 
-.project-card-img{
+.project-card-img {
     background-color: $primary-color;
     border-radius: 20px;
 
-    img{
+    img {
         border-radius: 20px;
         display: block;
         width: 100%;
-        transition: .2s linear opacity;
+        transition: 0.2s linear opacity;
     }
 }
 
-.project-card-title{
+.project-card-title {
     font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
     position: absolute;
     opacity: 0;
-    transition: .2s all linear;
+    transition: 0.2s all linear;
 }
 
 //MEDIA
 @media (max-width: 575px) {
-    .portfolio-block{
-        padding-top:100px ;
+    .portfolio-block {
+        padding-top: 100px;
     }
 }

@@ -1,15 +1,15 @@
-@import "colors";
-body{
+@import 'colors';
+body {
     background-color: $bg-color;
     color: $font-color;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
 
-a{
+a {
     color: $font-color;
     text-decoration: none;
-    &:hover{
+    &:hover {
         color: $font-color;
     }
 }
@@ -18,7 +18,7 @@ a{
     color: $primary-color;
 }
 
-.title{
+.title {
     font-size: 60px;
     margin: 50px 0;
     text-align: center;
@@ -26,17 +26,17 @@ a{
     justify-content: center;
     align-items: center;
 
-    .title-bg{
+    .title-bg {
         position: absolute;
         color: $transperent-gray;
         font-weight: 900;
         font-size: 110px;
-        line-height: .5;
+        line-height: 0.5;
         z-index: -1;
     }
 }
 
-.subtitle{
+.subtitle {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 30px;
@@ -57,7 +57,7 @@ a{
     }
 }
 
-.delimiter{
+.delimiter {
     border-top: 1px solid $transperent-gray;
     max-width: 50%;
     width: 100%;
@@ -65,7 +65,7 @@ a{
 }
 
 @media (max-width: 575px) {
-    .title{
+    .title {
         display: none;
     }
 }

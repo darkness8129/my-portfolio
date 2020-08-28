@@ -7,7 +7,7 @@
 }
 
 .header_active {
-    display: block!important;
+    display: block !important;
     height: 100vh;
     background-color: $header-mobile-bg;
 }
@@ -63,8 +63,8 @@
     }
 }
 
-.nav-link_active{
-    background-color: $primary-color!important;
+.nav-link_active {
+    background-color: $primary-color !important;
 }
 
 //TOGGLE BTN
@@ -88,7 +88,7 @@
     transition: 0.5s linear all;
 
     &::before {
-        content: "";
+        content: '';
         position: absolute;
         top: 7px;
         left: 0;
@@ -99,7 +99,7 @@
     }
 
     &::after {
-        content: "";
+        content: '';
         position: absolute;
         top: 14px;
         left: 0;
@@ -118,7 +118,7 @@
     }
 
     &::after {
-        transform: translate(0px, -14px) rotate(-90deg) ;
+        transform: translate(0px, -14px) rotate(-90deg);
     }
 }
 
@@ -127,7 +127,7 @@
     //HEADER
     .header {
         display: flex;
-        justify-content:flex-end;
+        justify-content: flex-end;
         align-items: center;
         width: 100%;
         top: 0;
@@ -174,7 +174,7 @@
 
 @media (max-width: 575px) {
     //HEADER
-    .header{
+    .header {
         background-color: $header-mobile-bg;
         justify-content: space-between;
     }

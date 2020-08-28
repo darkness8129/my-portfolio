@@ -1,23 +1,23 @@
 //RESET
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-a{
+a {
     text-decoration: none;
 
-    &:hover{
+    &:hover {
         text-decoration: none;
     }
 }
 
-ul{
+ul {
     padding: 0;
 }
 
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: border-box;
 }

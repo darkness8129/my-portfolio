@@ -12,7 +12,7 @@
     margin-top: 50px;
 
     &::before {
-        content: "";
+        content: '';
         position: absolute;
         width: 125px;
         height: 125px;
@@ -20,5 +20,11 @@
         z-index: -1;
         background-color: gray;
         background-image: $gradients;
+    }
+
+    span {
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
     }
 }
