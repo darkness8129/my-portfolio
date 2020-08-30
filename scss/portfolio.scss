@@ -45,9 +45,8 @@
     transition: 0.2s all linear;
 }
 
-//MEDIA
 @media (max-width: 575px) {
-    .portfolio-block {
-        padding-top: 100px;
+    .project-card:last-child {
+        margin-bottom: 0;
     }
 }

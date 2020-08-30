@@ -164,12 +164,15 @@ a {
   a:hover {
     color: white; }
 
+.content {
+  margin: 50px 0; }
+
 .highlighted-text {
   color: orange; }
 
 .title {
   font-size: 60px;
-  margin: 50px 0;
+  margin-bottom: 50px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -206,6 +209,10 @@ a {
   margin: 50px auto; }
 
 @media (max-width: 575px) {
+  .content {
+    margin-top: 100px;
+    margin-bottom: 42px; }
+
   .title {
     display: none; } }
 .info-list {
@@ -420,7 +427,4 @@ a {
       display: none; } }
 @media (max-width: 575px) {
   .info-title {
-    display: block; }
-
-  .subtitle:nth-child(1) {
-    margin-top: 100px !important; } }
+    display: block; } }

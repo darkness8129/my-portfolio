@@ -15,7 +15,7 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row" style="height: 100vh;">
+        <div class="row">
             <header class="header">
                 <span class="header-title-mobile">My <span class="highlighted-text">portfolio</span></span>
                 <nav class="navbar navbar-expand-lg">
@@ -32,22 +32,22 @@
                                         class="nav-link-text">Home</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.html"><i class="fas fa-address-card"></i><span
-                                        class="nav-link-text">About</span></a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link nav-link_active" href="portfolio.html"><i
-                                        class="fas fa-briefcase"></i><span class="nav-link-text">My projects</span></a>
+                                <a class="nav-link" href="about.html"><i
+                                        class="fas fa-address-card"></i><span class="nav-link-text">About</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html"><i class="fas fa-address-book"></i><span
+                                <a class="nav-link nav-link_active" href="portfolio.html"><i class="fas fa-briefcase"></i><span
+                                        class="nav-link-text">My projects</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i><span
                                         class="nav-link-text">Contact</span></a>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </header>
-            <div class="col-lg-12">
+            <div class="col-lg-12 content transition-fade" id="swup">
                 <h1 class="text-uppercase title"><b>My <span class="highlighted-text">Portfolio</span></b><span
                         class="title-bg">Works</span></h1>
                 <div class="container">
@@ -106,7 +106,6 @@
             </div>
         </div>
     </div>
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
