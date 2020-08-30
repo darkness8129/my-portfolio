@@ -59,3 +59,9 @@
         text-align: center;
     }
 }
+
+@media (max-width: 575px) {
+    .social-block {
+        text-align: start;
+    }
+}
