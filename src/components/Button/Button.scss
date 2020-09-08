@@ -1,0 +1,15 @@
+@import './../../scss/colors';
+
+.button {
+    display: inline-block;
+    background-color: $primary-color;
+    border-radius: 20px;
+    padding: 10px 40px;
+    font-weight: bold;
+    transition: 0.2s linear all;
+
+    &:hover {
+        color: $primary-color;
+        background-color: white;
+    }
+}

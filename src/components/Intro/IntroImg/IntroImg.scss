@@ -1,11 +1,4 @@
-@import 'colors';
-
-//INTRO
-.intro {
-    height: 100%;
-    padding: 30px 15px;
-    justify-content: flex-end;
-}
+@import './../../../scss/colors';
 
 .intro-img {
     width: 100%;
@@ -31,22 +24,7 @@
     }
 }
 
-.text-block {
-    p:first-child {
-        margin: 10px 0;
-        font-size: 25px;
-        font-family: monospace;
-    }
-}
-
-//MEDIA
 @media (max-width: 991px) {
-    //INTRO
-    .intro {
-        display: flex;
-        align-content: center;
-    }
-
     .intro-img::after {
         display: none;
     }
@@ -59,18 +37,10 @@
         background-position: 30px;
         margin: 0 auto;
     }
-
-    .text-block {
-        text-align: center;
-    }
 }
 
 @media (max-width: 575px) {
-    //INTRO
     .intro-img {
         display: none;
-    }
-    .text-block {
-        text-align: start;
     }
 }

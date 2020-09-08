@@ -24,43 +24,11 @@ a {
     color: $primary-color;
 }
 
-.title {
-    font-size: 60px;
-    margin-bottom: 50px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .title-bg {
-        position: absolute;
-        color: $transperent-gray;
-        font-weight: 900;
-        font-size: 110px;
-        line-height: 0.5;
-        z-index: -1;
-    }
-}
-
 .subtitle {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 50px;
-}
-
-.button {
-    display: inline-block;
-    background-color: $primary-color;
-    border-radius: 20px;
-    padding: 10px 40px;
-    font-weight: bold;
-    transition: 0.2s linear all;
-
-    &:hover {
-        color: $primary-color;
-        background-color: white;
-    }
 }
 
 .delimiter {

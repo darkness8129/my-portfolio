@@ -1,24 +1,24 @@
 import React from 'react';
-import './../scss/about.scss';
+import './../../scss/about.scss';
 
 const About = () => {
     return (
-        <div class='content'>
-            <h1 class='text-uppercase title'>
+        <div className='content'>
+            <h1 className='text-uppercase title'>
                 <b>
-                    About <span class='highlighted-text'>me</span>
+                    About <span className='highlighted-text'>me</span>
                 </b>
-                <span class='title-bg'>Resume</span>
+                <span className='title-bg'>Resume</span>
             </h1>
-            <div class='container'>
-                <div class='row'>
-                    <div class='col-lg-6'>
-                        <div class='row'>
-                            <div class='col-12'>
-                                <h2 class='subtitle m-0'>Personal info</h2>
+            <div className='container'>
+                <div className='row'>
+                    <div className='col-lg-6'>
+                        <div className='row'>
+                            <div className='col-12'>
+                                <h2 className='subtitle m-0'>Personal info</h2>
                             </div>
-                            <div class='col-6'>
-                                <ul class='info-list'>
+                            <div className='col-6'>
+                                <ul className='info-list'>
                                     <li>
                                         <span>First name: </span>
                                         <span>Yaroslav</span>
@@ -41,8 +41,8 @@ const About = () => {
                                     </li>
                                 </ul>
                             </div>
-                            <div class='col-6'>
-                                <ul class='info-list'>
+                            <div className='col-6'>
+                                <ul className='info-list'>
                                     <li>
                                         <span>Address: </span>
                                         <span>Kyiv</span>
@@ -65,46 +65,46 @@ const About = () => {
                                     </li>
                                 </ul>
                             </div>
-                            <div class='col-12'>
+                            <div className='col-12'>
                                 <a
                                     href='../filestorage/my-cv.pdf'
-                                    class='button'
+                                    className='button'
                                 >
                                     View CV
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class='col-lg-6 mt-5 mt-lg-0'>
-                        <div class='row'>
-                            <div class='col-6'>
-                                <div class='achievement'>
-                                    <span class='achievement-num'>1+</span>
-                                    <span class='achievement-title'>
+                    <div className='col-lg-6 mt-5 mt-lg-0'>
+                        <div className='row'>
+                            <div className='col-6'>
+                                <div className='achievement'>
+                                    <span className='achievement-num'>1+</span>
+                                    <span className='achievement-title'>
                                         Years of experience
                                     </span>
                                 </div>
                             </div>
-                            <div class='col-6'>
-                                <div class='achievement'>
-                                    <span class='achievement-num'>10+</span>
-                                    <span class='achievement-title'>
+                            <div className='col-6'>
+                                <div className='achievement'>
+                                    <span className='achievement-num'>10+</span>
+                                    <span className='achievement-title'>
                                         Projects
                                     </span>
                                 </div>
                             </div>
-                            <div class='col-6'>
-                                <div class='achievement'>
-                                    <span class='achievement-num'>2+</span>
-                                    <span class='achievement-title'>
+                            <div className='col-6'>
+                                <div className='achievement'>
+                                    <span className='achievement-num'>2+</span>
+                                    <span className='achievement-title'>
                                         Years in university
                                     </span>
                                 </div>
                             </div>
-                            <div class='col-6'>
-                                <div class='achievement'>
-                                    <span class='achievement-num'>1+</span>
-                                    <span class='achievement-title'>
+                            <div className='col-6'>
+                                <div className='achievement'>
+                                    <span className='achievement-num'>1+</span>
+                                    <span className='achievement-title'>
                                         Years of experience
                                     </span>
                                 </div>
@@ -112,76 +112,78 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <hr class='delimiter' />
-                <h2 class='subtitle' style={{ textAlign: 'center' }}>
+                <hr className='delimiter' />
+                <h2 className='subtitle' style={{ textAlign: 'center' }}>
                     My skills
                 </h2>
-                <div class='row'>
-                    <div class='col-6 col-md-3'>
-                        <div class='skill-70'>
+                <div className='row'>
+                    <div className='col-6 col-md-3'>
+                        <div className='skill-70'>
                             <span>70%</span>
                         </div>
-                        <h5 class='skill-title'>HTML</h5>
+                        <h5 className='skill-title'>HTML</h5>
                     </div>
-                    <div class='col-6 col-md-3'>
-                        <div class='skill-75'>
+                    <div className='col-6 col-md-3'>
+                        <div className='skill-75'>
                             <span>75%</span>
                         </div>
-                        <h5 class='skill-title'>CSS</h5>
+                        <h5 className='skill-title'>CSS</h5>
                     </div>
-                    <div class='col-6 col-md-3'>
-                        <div class='skill-60'>
+                    <div className='col-6 col-md-3'>
+                        <div className='skill-60'>
                             <span>60%</span>
                         </div>
-                        <h5 class='skill-title'>Js</h5>
+                        <h5 className='skill-title'>Js</h5>
                     </div>
-                    <div class='col-6 col-md-3'>
-                        <div class='skill-50'>
+                    <div className='col-6 col-md-3'>
+                        <div className='skill-50'>
                             <span>50%</span>
                         </div>
-                        <h5 class='skill-title'>React</h5>
+                        <h5 className='skill-title'>React</h5>
                     </div>
-                    <div class='col-6 col-md-3'>
-                        <div class='skill-60'>
+                    <div className='col-6 col-md-3'>
+                        <div className='skill-60'>
                             <span>60%</span>
                         </div>
-                        <h5 class='skill-title'>SCSS</h5>
+                        <h5 className='skill-title'>SCSS</h5>
                     </div>
-                    <div class='col-6 col-md-3'>
-                        <div class='skill-50'>
+                    <div className='col-6 col-md-3'>
+                        <div className='skill-50'>
                             <span>50%</span>
                         </div>
-                        <h5 class='skill-title'>Bootstrap</h5>
+                        <h5 className='skill-title'>Bootstrap</h5>
                     </div>
-                    <div class='col-6 col-md-3'>
-                        <div class='skill-40'>
+                    <div className='col-6 col-md-3'>
+                        <div className='skill-40'>
                             <span>40%</span>
                         </div>
-                        <h5 class='skill-title'>jQuery</h5>
+                        <h5 className='skill-title'>jQuery</h5>
                     </div>
-                    <div class='col-6 col-md-3'>
-                        <div class='skill-40'>
+                    <div className='col-6 col-md-3'>
+                        <div className='skill-40'>
                             <span>40%</span>
                         </div>
-                        <h5 class='skill-title'>Git</h5>
+                        <h5 className='skill-title'>Git</h5>
                     </div>
                 </div>
-                <hr class='delimiter' />
-                <h2 class='subtitle' style={{ textAlign: 'center' }}>
+                <hr className='delimiter' />
+                <h2 className='subtitle' style={{ textAlign: 'center' }}>
                     Experience & education
                 </h2>
-                <div class='row'>
-                    <div class='col-md-6 mb-5 mb-md-0'>
-                        <div class='row'>
-                            <div class='exp-ed-icon'>
-                                <i class='fas fa-briefcase  '></i>
+                <div className='row'>
+                    <div className='col-md-6 mb-5 mb-md-0'>
+                        <div className='row'>
+                            <div className='exp-ed-icon'>
+                                <i className='fas fa-briefcase  '></i>
                             </div>
-                            <div class='col exp-ed-block'>
-                                <p class='time-text'>October 2019 - Present</p>
-                                <p class='activity-text'>
+                            <div className='col exp-ed-block'>
+                                <p className='time-text'>
+                                    October 2019 - Present
+                                </p>
+                                <p className='activity-text'>
                                     HTML/CSS Developer - <span>Freelance</span>
                                 </p>
-                                <p class='descr-text'>
+                                <p className='descr-text'>
                                     I was involved in the development of HTML
                                     templates and writing styles and also dealt
                                     with some JS scripts.
@@ -189,20 +191,20 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <div class='col-md-6'>
-                        <div class='row'>
-                            <div class='exp-ed-icon'>
-                                <i class='fas fa-briefcase'></i>
+                    <div className='col-md-6'>
+                        <div className='row'>
+                            <div className='exp-ed-icon'>
+                                <i className='fas fa-briefcase'></i>
                             </div>
-                            <div class='col exp-ed-block'>
-                                <p class='time-text'>
+                            <div className='col exp-ed-block'>
+                                <p className='time-text'>
                                     September 2018 - June 2022
                                 </p>
-                                <p class='activity-text'>
+                                <p className='activity-text'>
                                     Bachelor degree -{' '}
                                     <span>Kyiv Polytechnic Institute</span>
                                 </p>
-                                <p class='descr-text'>
+                                <p className='descr-text'>
                                     Student of FICT, specialty - computer
                                     engineering. I'm studying in the 3rd year.{' '}
                                 </p>

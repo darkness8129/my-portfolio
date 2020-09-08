@@ -1,0 +1,13 @@
+.contact-img {
+    img {
+        border-radius: 10px;
+        width: 100%;
+        opacity: 0.9;
+    }
+}
+
+@media (max-width: 991px) {
+    .contact-img {
+        display: none;
+    }
+}

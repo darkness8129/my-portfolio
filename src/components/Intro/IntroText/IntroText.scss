@@ -1,0 +1,19 @@
+.text-block {
+    p:first-child {
+        margin: 10px 0;
+        font-size: 25px;
+        font-family: monospace;
+    }
+}
+
+@media (max-width: 991px) {
+    .text-block {
+        text-align: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .text-block {
+        text-align: start;
+    }
+}

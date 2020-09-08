@@ -1,0 +1,12 @@
+.intro {
+    height: 100%;
+    padding: 30px 15px;
+    justify-content: flex-end;
+}
+
+@media (max-width: 991px) {
+    .intro {
+        display: flex;
+        align-content: center;
+    }
+}

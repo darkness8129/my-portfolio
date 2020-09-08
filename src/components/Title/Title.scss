@@ -1,0 +1,19 @@
+@import './../../scss/colors';
+
+.title {
+    font-size: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .title-bg {
+        position: absolute;
+        color: $transperent-gray;
+        font-weight: 900;
+        font-size: 110px;
+        line-height: 0.5;
+        z-index: -1;
+    }
+}
