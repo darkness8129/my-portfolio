@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard/ProjectCard';
 
 const Portfolio = () => {
     return (
-        <div class='content'>
+        <div className='content'>
             <Title bgText='Works' firstPart='My' secondPart='Portfolio' />
             <div className='container'>
                 <div className='row'>

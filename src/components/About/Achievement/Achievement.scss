@@ -1,0 +1,46 @@
+@import '../../../scss/colors';
+
+.achievement {
+    width: 100%;
+    height: 150px;
+    border: 1px solid $transperent-gray;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+.achievement-num {
+    font-size: 40px;
+    font-weight: bold;
+    color: $primary-color;
+}
+
+.achievement-title {
+    font-family: monospace;
+    display: block;
+    margin-left: 25px;
+    position: relative;
+    text-transform: uppercase;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 2px;
+        background-color: $transperent-gray;
+        top: 50%;
+        margin-top: -2px;
+        left: -40px;
+    }
+}
+
+@media (max-width: 767px) {
+    //RECTANGLES
+    .achievement-title {
+        margin-left: 0;
+
+        &::before {
+            display: none;
+        }
+    }
+}

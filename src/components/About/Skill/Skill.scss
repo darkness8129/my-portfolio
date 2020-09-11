@@ -1,0 +1,45 @@
+@import './../../../scss/colors';
+@import './../../../scss/mixins';
+
+.skill-70 {
+    @include skill(
+        linear-gradient(90deg, transparent 50%, $primary-color 50%),
+        linear-gradient(162deg, transparent 50%, $primary-color 50%)
+    );
+}
+
+.skill-75 {
+    @include skill(
+        linear-gradient(90deg, transparent 50%, $primary-color 50%),
+        linear-gradient(180deg, transparent 50%, $primary-color 50%)
+    );
+}
+
+.skill-60 {
+    @include skill(
+        linear-gradient(90deg, transparent 50%, $primary-color 50%),
+        linear-gradient(126deg, transparent 50%, $primary-color 50%)
+    );
+}
+
+.skill-50 {
+    @include skill(
+        linear-gradient(90deg, transparent 50%, $primary-color 50%),
+        linear-gradient(90deg, transparent 50%, $primary-color 50%)
+    );
+}
+
+.skill-40 {
+    @include skill(
+        linear-gradient(234deg, transparent 50%, gray 50%),
+        linear-gradient(90deg, gray 50%, $primary-color 50%)
+    );
+}
+
+.skill-title {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+}

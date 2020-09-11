@@ -1,0 +1,11 @@
+.info-list {
+    list-style: none;
+
+    li {
+        margin-top: 15px;
+
+        span:first-child {
+            color: gray;
+        }
+    }
+}

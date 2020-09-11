@@ -24,20 +24,6 @@ a {
     color: $primary-color;
 }
 
-.subtitle {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 50px;
-}
-
-.delimiter {
-    border-top: 1px solid $transperent-gray;
-    max-width: 50%;
-    width: 100%;
-    margin: 50px auto;
-}
-
 @media (max-width: 575px) {
     .content {
         margin-top: 100px;
