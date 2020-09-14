@@ -1,19 +1,28 @@
 import React from 'react';
-import './Experience.scss';
 
-const Experience = ({ timeText, position, company, descrText }) => {
+import ExperienceItem from './ExperienceItem/ExperienceItem';
+
+const Experience = () => {
     return (
-        <div>
-            <div className='exp-icon'>
-                <i className='fas fa-briefcase'></i>
+        <div className='row'>
+            <div className='col-md-6 mb-5 mb-md-0'>
+                <ExperienceItem
+                    timeText='October 2019 - Present'
+                    position='HTML/CSS Developer - '
+                    company='Freelance'
+                    descrText='I was involved in the development of HTML
+                            templates and writing styles and also dealt with
+                            some JS scripts.'
+                />
             </div>
-            <div className='col exp-block'>
-                <p className='time-text'>{timeText}</p>
-                <p className='activity-text'>
-                    {position}
-                    <span>{company}</span>
-                </p>
-                <p className='descr-text'>{descrText}</p>
+            <div className='col-md-6'>
+                <ExperienceItem
+                    timeText='September 2018 - June 2022'
+                    position='Bachelor degree - '
+                    company='Kyiv Polytechnic Institute'
+                    descrText='Student of FICT, specialty - computer
+                            engineering. I am studying in the 3rd year.'
+                />
             </div>
         </div>
     );

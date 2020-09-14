@@ -1,0 +1,39 @@
+@import '../../../../scss/colors';
+
+.nav-item {
+    margin: 10px;
+}
+
+.nav-link {
+    color: $font-color;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: $transparent-gray;
+    border-radius: 50%;
+    transition: 0.1s linear all;
+
+    .nav-link-text {
+        display: none;
+        white-space: nowrap;
+        margin: 0 12px;
+        text-transform: uppercase;
+    }
+
+    &:hover {
+        background-color: $primary-color;
+        width: 100%;
+        border-radius: 70px;
+        justify-content: space-around;
+        .nav-link-text {
+            display: inline;
+        }
+    }
+}
+
+.nav-link_active {
+    background-color: $primary-color !important;
+}

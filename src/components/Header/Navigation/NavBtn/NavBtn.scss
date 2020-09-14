@@ -1,0 +1,54 @@
+//TOGGLE BTN
+.navbar-toggler {
+    margin: 10px;
+    padding: 10px 10px 23px 10px;
+    background-color: #1c1c1b;
+    transition: 0.3s linear all;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.toggler-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: relative;
+    transition: 0.5s linear all;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        transition: 0.3s linear all;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 14px;
+        left: 0;
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        transition: 0.3s linear all;
+    }
+}
+
+.toggler-icon_active {
+    transform: translate(0px, 7px) rotate(405deg);
+
+    &::before {
+        display: none;
+    }
+
+    &::after {
+        transform: translate(0px, -14px) rotate(-90deg);
+    }
+}

@@ -1,7 +1,7 @@
-@import './../../../scss/colors';
+@import './../../../../scss/colors';
 
 .exp-block {
-    border-left: 1px solid $transperent-gray;
+    border-left: 1px solid $transparent-gray;
     margin: 0 10px;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .time-text {
-    background-color: $transperent-gray;
+    background-color: $transparent-gray;
     display: inline-block;
     font-size: 13px;
     padding: 5px 10px;
