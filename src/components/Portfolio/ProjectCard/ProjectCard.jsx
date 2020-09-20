@@ -7,7 +7,7 @@ const ProjectCard = ({ title, link, img }) => {
             <span className='project-card-title'>{title}</span>
             <div className='project-card-img'>
                 <a href={link}>
-                    <img src={img} alt='' className='project-img' />
+                    <img src={img} alt='project-img' className='project-img' />
                 </a>
             </div>
         </div>

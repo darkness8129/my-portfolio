@@ -15,7 +15,7 @@ let navItemsArr = [
     { id: 4, link: '/contact', title: 'Contact', icon: 'fas fa-envelope' },
 ];
 
-const Navigation = () => {
+const Navigation = ({ toggleIsActive, isActive }) => {
     const navItems = navItemsArr.map((navItem) => {
         return (
             <NavigationItem
@@ -23,15 +23,18 @@ const Navigation = () => {
                 link={navItem.link}
                 title={navItem.title}
                 icon={navItem.icon}
+                toggleIsActive={toggleIsActive}
             />
         );
     });
 
     return (
         <nav className='navbar navbar-expand-lg'>
-            <NavBtn />
+            <NavBtn toggleIsActive={toggleIsActive} isActive={isActive} />
             <div
-                className='collapse navbar-collapse'
+                className={`collapse navbar-collapse ${
+                    isActive ? ' show' : ''
+                }`}
                 id='navbarSupportedContent'
             >
                 <ul className='navbar-nav mr-auto'>{navItems}</ul>

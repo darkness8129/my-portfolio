@@ -5,3 +5,9 @@
 .navbar-nav {
     flex-direction: column !important;
 }
+@media (max-width: 991px) {
+    // //NAVIGATION
+    .navbar {
+        flex-direction: row-reverse;
+    }
+}

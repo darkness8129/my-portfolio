@@ -8,20 +8,6 @@
     z-index: 1000;
 }
 
-.header_active {
-    display: block !important;
-    height: 100vh;
-    background-color: $header-mobile-bg;
-}
-
-// .header-title-mobile {
-//     display: none;
-//     font-size: 25px;
-//     margin-left: 20px;
-//     font-weight: bold;
-//     text-transform: uppercase;
-// }
-
 //MEDIA
 @media (max-width: 991px) {
     //HEADER
@@ -33,16 +19,17 @@
         top: 0;
         margin: 0;
     }
+
+    .header_active {
+        display: block !important;
+        height: 100vh;
+        background-color: $header-mobile-bg;
+    }
 }
 
 @media (max-width: 575px) {
     //HEADER
     .header {
         background-color: $header-mobile-bg;
-        justify-content: space-between;
     }
-
-    // .header-title-mobile {
-    //     display: block;
-    // }
 }

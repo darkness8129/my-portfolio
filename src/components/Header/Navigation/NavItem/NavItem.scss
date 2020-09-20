@@ -37,3 +37,37 @@
 .nav-link_active {
     background-color: $primary-color !important;
 }
+
+@media (max-width: 991px) {
+    .nav-item {
+        margin: 0;
+        border-bottom: 1px solid $transparent-gray;
+    }
+
+    .nav-item:last-child {
+        border: none;
+    }
+
+    .nav-link {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        background-color: $header-mobile-bg;
+        border-radius: 0%;
+        padding-left: 22px !important;
+
+        .nav-link-text {
+            display: inline;
+        }
+
+        &:hover {
+            background-color: $primary-color;
+            width: 100%;
+            border-radius: 0px;
+            justify-content: flex-start;
+            .nav-link-text {
+                display: inline;
+            }
+        }
+    }
+}

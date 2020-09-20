@@ -1,6 +1,7 @@
 import React from 'react';
 import Title from '../Title/Title';
 import ProjectCard from './ProjectCard/ProjectCard';
+
 const projects = [
     {
         id: 1,

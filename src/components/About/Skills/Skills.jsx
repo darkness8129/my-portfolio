@@ -47,8 +47,8 @@ const skillsData = [
 const Skills = () => {
     const skills = skillsData.map((skill) => {
         return (
-            <div className='col-6 col-md-3'>
-                <Skill key={skill.id} level={skill.level} title={skill.title} />
+            <div key={skill.id} className='col-6 col-md-3'>
+                <Skill level={skill.level} title={skill.title} />
             </div>
         );
     });

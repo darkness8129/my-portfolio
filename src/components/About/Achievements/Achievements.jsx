@@ -27,9 +27,8 @@ const achievementsData = [
 const Achievements = () => {
     const achievements = achievementsData.map((achievement) => {
         return (
-            <div className='col-6'>
+            <div key={achievement.id} className='col-6'>
                 <Achievement
-                    key={achievement.id}
                     number={achievement.number}
                     title={achievement.title}
                 />
