@@ -5,7 +5,7 @@ import InfoListItem from './InfoListItem/InfoListItem';
 const InfoList = ({ infoListData }) => {
     const infoList = infoListData.map((item) => {
         return (
-            <InfoListItem key={item.id} title={item.title} info={item.title} />
+            <InfoListItem key={item.id} title={item.title} info={item.info} />
         );
     });
 

@@ -4,7 +4,7 @@ import NavigationItem from './NavItem/NavItem';
 import NavBtn from './NavBtn/NavBtn';
 
 let navItemsArr = [
-    { id: 1, link: '/intro', title: 'Home', icon: 'fas fa-home' },
+    { id: 1, link: '/', title: 'Home', icon: 'fas fa-home' },
     { id: 2, link: '/about', title: 'About', icon: 'fas fa-address-card' },
     {
         id: 3,

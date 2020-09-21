@@ -6,6 +6,7 @@ const NavigationItem = ({ link, title, icon, toggleIsActive }) => {
     return (
         <li className='nav-item'>
             <NavLink
+                exact={link === '/' ? true : false}
                 className='nav-link'
                 to={link}
                 activeClassName='nav-link_active'

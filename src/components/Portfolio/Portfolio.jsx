@@ -18,7 +18,7 @@ const projects = [
     {
         id: 3,
         title: 'Notes App',
-        link: 'https://github.com/darkness8129/notes-app',
+        link: 'https://darkness8129.github.io/notes-app/',
         img: '/images/projects/notesApp.png',
     },
     {
