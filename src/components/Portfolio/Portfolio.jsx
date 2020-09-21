@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import Title from '../Title/Title';
 import ProjectCard from './ProjectCard/ProjectCard';
@@ -36,6 +37,17 @@ const projects = [
     { id: 6, title: 'Pex', link: '#', img: '/images/projects/pex.png' },
 ];
 
+const pageTransition = {
+    in: {
+        opacity: 1,
+        y: 0,
+    },
+    out: {
+        opacity: 0,
+        y: '-100vh',
+    },
+};
+
 const Portfolio = () => {
     const projectCards = projects.map((project) => {
         return (
@@ -50,12 +62,18 @@ const Portfolio = () => {
     });
 
     return (
-        <div className='content'>
+        <motion.div
+            initial='out'
+            animate='in'
+            exit='out'
+            variants={pageTransition}
+            className='content'
+        >
             <Title bgText='Works' firstPart='My' secondPart='Portfolio' />
             <div className='container'>
                 <div className='row'>{projectCards}</div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

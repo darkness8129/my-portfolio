@@ -6,9 +6,28 @@ import Delimiter from '../Delimiter/Delimiter';
 import PersonalInfo from './PersonalInfo/PersonalInfo';
 import Achievements from './Achievements/Achievements';
 import Skills from './Skills/Skills';
+import { motion } from 'framer-motion';
+
+const pageTransition = {
+    in: {
+        opacity: 1,
+        y: 0,
+    },
+    out: {
+        opacity: 0,
+        y: '-100vh',
+    },
+};
+
 const About = () => {
     return (
-        <div className='content'>
+        <motion.div
+            initial='out'
+            animate='in'
+            exit='out'
+            variants={pageTransition}
+            className='content'
+        >
             <Title bgText='Resume' firstPart='About' secondPart='me' />
             <div className='container'>
                 <div className='row'>
@@ -26,7 +45,7 @@ const About = () => {
                 <Subtitle text={'Experience & education'} />
                 <Experience />
             </div>
-        </div>
+        </motion.div>
     );
 };
 
