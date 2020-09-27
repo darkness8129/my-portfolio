@@ -8,33 +8,44 @@ const projects = [
         id: 1,
         title: 'Calculator',
         link: 'https://darkness8129.github.io/dark-calculator/',
-        img: '/images/projects/calculator.png',
+        img:
+            'https://darkness8129.github.io/my-portfolio/images/projects/calculator.png',
     },
     {
         id: 2,
         title: 'Matrix effect',
         link: 'https://darkness8129.github.io/matrix-effect/',
-        img: '/images/projects/matrixEffect.png',
+        img:
+            'https://darkness8129.github.io/my-portfolio/images/projects/matrixEffect.png',
     },
     {
         id: 3,
         title: 'Notes App',
         link: 'https://darkness8129.github.io/notes-app/',
-        img: '/images/projects/notesApp.png',
+        img:
+            'https://darkness8129.github.io/my-portfolio/images/projects/notesApp.png',
     },
     {
         id: 4,
         title: 'Abi Compass',
         link: 'https://github.com/darkness8129/abi-compass',
-        img: '/images/projects/abiCompass.png',
+        img:
+            'https://darkness8129.github.io/my-portfolio/images/projects/abiCompass.png',
     },
     {
         id: 5,
         title: 'Axit',
         link: 'https://github.com/darkness8129/Axit',
-        img: '/images/projects/axit.png',
+        img:
+            'https://darkness8129.github.io/my-portfolio/images/projects/axit.png',
     },
-    { id: 6, title: 'Pex', link: '#', img: '/images/projects/pex.png' },
+    {
+        id: 6,
+        title: 'Pex',
+        link: '#',
+        img:
+            'https://darkness8129.github.io/my-portfolio/images/projects/pex.png',
+    },
 ];
 
 const pageTransition = {

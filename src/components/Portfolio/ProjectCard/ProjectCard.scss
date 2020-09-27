@@ -42,7 +42,9 @@
 }
 
 @media (max-width: 575px) {
-    .project-card:last-child {
-        margin-bottom: 0;
+    .col-12:last-child {
+        .project-card {
+            margin-bottom: 0;
+        }
     }
 }

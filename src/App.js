@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Header from './components/Header/Header';
 import Intro from './components/Intro/Intro';
 import './scss/base.scss'
-import { Route, Switch, useLocation } from 'react-router-dom';
+import { Redirect, Route, Switch, useLocation } from 'react-router-dom';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Portfolio from './components/Portfolio/Portfolio';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 
 function App() {
     const location = useLocation();
@@ -20,9 +20,12 @@ function App() {
                         <AnimatePresence exitBeforeEnter>
                             <Switch location={location} key={location.pathname}>
                                 <Route exact path='/' component={Intro} />
-                                <Route path='/about' component={About} />
-                                <Route path='/portfolio' component={Portfolio} />
-                                <Route path='/contact' component={Contact} />
+                                <Route exact path='/about' component={About} />
+                                <Route exact path='/portfolio' component={Portfolio} />
+                                <Route exact path='/contact' component={Contact} />
+                                <motion.Fragment exit="undefined">
+                                    <Redirect to="/" />
+                                </motion.Fragment>
                             </Switch>
                         </AnimatePresence>
                     </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './NavBtn.scss';
+import classNames from 'classnames';
 
 const NavBtn = ({ toggleIsActive, isActive }) => {
     return (
@@ -14,9 +15,9 @@ const NavBtn = ({ toggleIsActive, isActive }) => {
             onClick={toggleIsActive}
         >
             <span
-                className={`toggler-icon ${
-                    isActive ? ' toggler-icon_active' : ''
-                }`}
+                className={classNames('toggler-icon', {
+                    'toggler-icon_active': isActive,
+                })}
             ></span>
         </button>
     );

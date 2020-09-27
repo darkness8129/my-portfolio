@@ -2,6 +2,7 @@ import React from 'react';
 import './Navigation.scss';
 import NavigationItem from './NavItem/NavItem';
 import NavBtn from './NavBtn/NavBtn';
+import classNames from 'classnames';
 
 let navItemsArr = [
     { id: 1, link: '/', title: 'Home', icon: 'fas fa-home' },
@@ -32,9 +33,9 @@ const Navigation = ({ toggleIsActive, isActive }) => {
         <nav className='navbar navbar-expand-lg'>
             <NavBtn toggleIsActive={toggleIsActive} isActive={isActive} />
             <div
-                className={`collapse navbar-collapse ${
-                    isActive ? ' show' : ''
-                }`}
+                className={classNames('collapse', 'navbar-collapse', {
+                    show: isActive,
+                })}
                 id='navbarSupportedContent'
             >
                 <ul className='navbar-nav mr-auto'>{navItems}</ul>
