@@ -1,0 +1,22 @@
+@import './../../scss/colors';
+.cv-mobile-link {
+    display: none;
+}
+
+@media (max-width: 656px) {
+    .cv-document {
+        display: none;
+    }
+
+    .cv-mobile-link {
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: underline;
+        cursor: pointer;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
