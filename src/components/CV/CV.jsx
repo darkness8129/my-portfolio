@@ -22,13 +22,13 @@ const CV = () => {
             <Title bgText='Resume' firstPart='My' secondPart='CV' />
             <div className='container'>
                 <div className='row'>
-                    {/* <embed
+                    <embed
                         src={
                             'https://darkness8129.github.io/my-portfolio/cv.pdf'
                         }
-                        width='500'
-                        height='375'
-                    ></embed> */}
+                        width='800'
+                        height='475'
+                    ></embed>
                 </div>
             </div>
         </motion.div>
