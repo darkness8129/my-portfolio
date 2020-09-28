@@ -7,17 +7,7 @@ import PersonalInfo from './PersonalInfo/PersonalInfo';
 import Achievements from './Achievements/Achievements';
 import Skills from './Skills/Skills';
 import { motion } from 'framer-motion';
-
-const pageTransition = {
-    in: {
-        opacity: 1,
-        y: 0,
-    },
-    out: {
-        opacity: 0,
-        y: '-100vh',
-    },
-};
+import pageTransition from '../../animationProps';
 
 const About = () => {
     return (

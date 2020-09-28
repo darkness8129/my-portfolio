@@ -12,7 +12,7 @@ const socialIconsData = [
     { id: 3, link: 'https://github.com/darkness8129', icon: 'fab fa-github' },
     {
         id: 4,
-        link: 'linkedin.com/in/yaroslav-yukhymchuk-425ba2195',
+        link: 'https://www.linkedin.com/in/yaroslav-yukhymchuk-425ba2195/',
         icon: 'fab fa-linkedin',
     },
 ];

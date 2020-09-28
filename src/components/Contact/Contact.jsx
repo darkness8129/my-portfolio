@@ -3,17 +3,7 @@ import ContactText from './ContactText/ContactText';
 import ContactImg from './ContactImg/ContactImg';
 import Title from '../Title/Title';
 import { motion } from 'framer-motion';
-
-const pageTransition = {
-    in: {
-        opacity: 1,
-        y: 0,
-    },
-    out: {
-        opacity: 0,
-        y: '-100vh',
-    },
-};
+import pageTransition from '../../animationProps';
 
 const Contact = () => {
     return (

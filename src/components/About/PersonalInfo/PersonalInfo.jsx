@@ -32,7 +32,7 @@ const PersonalInfo = () => {
                 <InfoList infoListData={infoList.slice(5, 10)} />
             </div>
             <div className='col-12'>
-                <Button link='/mycv'>View CV</Button>
+                <Button link='/cv'>View CV</Button>
             </div>
         </div>
     );

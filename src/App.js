@@ -6,6 +6,7 @@ import { Redirect, Route, Switch, useLocation } from 'react-router-dom';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Portfolio from './components/Portfolio/Portfolio';
+import CV from './components/CV/CV';
 import { AnimatePresence, motion } from 'framer-motion';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
                                 <Route exact path='/about' component={About} />
                                 <Route exact path='/portfolio' component={Portfolio} />
                                 <Route exact path='/contact' component={Contact} />
+                                <Route exact path='/cv' component={CV} />
                                 <motion.Fragment exit="undefined">
                                     <Redirect to="/" />
                                 </motion.Fragment>

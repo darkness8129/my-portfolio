@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
+import pageTransition from '../../animationProps';
 import Title from '../Title/Title';
 import ProjectCard from './ProjectCard/ProjectCard';
 
@@ -47,17 +48,6 @@ const projects = [
             'https://darkness8129.github.io/my-portfolio/images/projects/pex.png',
     },
 ];
-
-const pageTransition = {
-    in: {
-        opacity: 1,
-        y: 0,
-    },
-    out: {
-        opacity: 0,
-        y: '-100vh',
-    },
-};
 
 const Portfolio = () => {
     const projectCards = projects.map((project) => {

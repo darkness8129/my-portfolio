@@ -3,17 +3,7 @@ import './Intro.scss';
 import IntroText from './IntroText/IntroText';
 import IntroImg from './IntroImg/IntroImg';
 import { motion } from 'framer-motion';
-
-const pageTransition = {
-    in: {
-        opacity: 1,
-        y: 0,
-    },
-    out: {
-        opacity: 0,
-        y: '-100vh',
-    },
-};
+import pageTransition from '../../animationProps';
 
 const Intro = () => {
     return (
