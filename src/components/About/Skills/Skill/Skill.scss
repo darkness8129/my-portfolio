@@ -1,6 +1,16 @@
 @import './../../../../scss/colors';
 @import './../../../../scss/mixins';
 
+// if skill < 50 --> first gradient 90 + lvl * 3.6
+// if skill > 50 --> second gradient 90 + (lvl - 50) * 3.6
+
+.skill-80 {
+    @include skill(
+        linear-gradient(90deg, transparent 50%, $primary-color 50%),
+        linear-gradient(198deg, transparent 50%, $primary-color 50%)
+    );
+}
+
 .skill-70 {
     @include skill(
         linear-gradient(90deg, transparent 50%, $primary-color 50%),
@@ -15,6 +25,13 @@
     );
 }
 
+.skill-65 {
+    @include skill(
+        linear-gradient(90deg, transparent 50%, $primary-color 50%),
+        linear-gradient(144deg, transparent 50%, $primary-color 50%)
+    );
+}
+
 .skill-60 {
     @include skill(
         linear-gradient(90deg, transparent 50%, $primary-color 50%),
@@ -26,6 +43,13 @@
     @include skill(
         linear-gradient(90deg, transparent 50%, $primary-color 50%),
         linear-gradient(90deg, transparent 50%, $primary-color 50%)
+    );
+}
+
+.skill-30 {
+    @include skill(
+        linear-gradient(198deg, transparent 50%, gray 50%),
+        linear-gradient(90deg, gray 50%, $primary-color 50%)
     );
 }
 

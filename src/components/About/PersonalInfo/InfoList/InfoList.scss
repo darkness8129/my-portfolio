@@ -6,6 +6,9 @@
 
         span:first-child {
             color: gray;
+            @media (max-width: 575.98px) {
+                display: block;
+            }
         }
     }
 }

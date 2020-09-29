@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { usePdf } from 'react-pdf-js';
 import pageTransition from '../../animationProps';
 import Title from '../Title/Title';

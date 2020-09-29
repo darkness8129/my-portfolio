@@ -6,7 +6,7 @@ import Subtitle from '../../Subtitle/Subtitle';
 export const infoList = [
     { title: 'First name', info: 'Yaroslav', id: 1 },
     { title: 'Last name', info: 'Yukhymchuk', id: 2 },
-    { title: 'Age', info: '19 years', id: 3 },
+    { title: 'Age', info: '19 y.o.', id: 3 },
     { title: 'Nationality', info: 'Ukrainian', id: 4 },
     { title: 'Marital status', info: 'Unmarried', id: 5 },
     { title: 'Address', info: 'Kyiv', id: 6 },

@@ -9,7 +9,7 @@
 }
 
 //MEDIA
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
     //HEADER
     .header {
         display: flex;
@@ -27,7 +27,7 @@
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 575.98px) {
     //HEADER
     .header {
         background-color: $header-mobile-bg;

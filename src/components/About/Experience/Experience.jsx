@@ -12,7 +12,7 @@ const Experience = () => {
                     company='Freelance'
                     descrText='I was involved in the development of HTML
                             templates and writing styles and also dealt with
-                            some JS scripts.'
+                            JS scripts.'
                 />
             </div>
             <div className='col-md-6'>
@@ -20,8 +20,8 @@ const Experience = () => {
                     timeText='September 2018 - June 2022'
                     position='Bachelor degree - '
                     company='Kyiv Polytechnic Institute'
-                    descrText='Student of FICT, specialty - computer
-                            engineering. I am studying in the 3rd year.'
+                    descrText='Student of Faculty of Informatics and Computer Engineering. Specialty - computer
+                            engineering. '
                 />
             </div>
         </div>

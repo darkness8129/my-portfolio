@@ -4,12 +4,12 @@ import Skill from './Skill/Skill';
 const skillsData = [
     {
         id: 1,
-        level: 75,
+        level: 80,
         title: 'HTML5',
     },
     {
         id: 2,
-        level: 75,
+        level: 80,
         title: 'CSS3',
     },
     {
@@ -19,28 +19,48 @@ const skillsData = [
     },
     {
         id: 4,
-        level: 50,
+        level: 65,
         title: 'ReactJs',
     },
     {
         id: 5,
-        level: 60,
-        title: 'SCSS',
+        level: 65,
+        title: 'Redux',
     },
     {
         id: 6,
-        level: 50,
-        title: 'Bootstrap',
+        level: 65,
+        title: 'Redux',
     },
     {
         id: 7,
+        level: 60,
+        title: 'Bootstrap',
+    },
+    {
+        id: 8,
         level: 40,
         title: 'jQuery',
     },
     {
-        id: 8,
+        id: 9,
         level: 50,
         title: 'Git',
+    },
+    {
+        id: 10,
+        level: 70,
+        title: 'npm/yarn',
+    },
+    {
+        id: 11,
+        level: 30,
+        title: 'node.js',
+    },
+    {
+        id: 12,
+        level: 70,
+        title: 'VS Code',
     },
 ];
 
