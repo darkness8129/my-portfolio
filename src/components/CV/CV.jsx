@@ -4,12 +4,13 @@ import { usePdf } from 'react-pdf-js';
 import pageTransition from '../../animationProps';
 import Title from '../Title/Title';
 import './CV.scss';
+import cvFile from './cv.pdf';
 
 const CV = () => {
     const canvasEl = useRef(null);
 
     usePdf({
-        file: 'https://darkness8129.github.io/my-portfolio/cv.pdf',
+        file: cvFile,
         canvasEl,
     });
 

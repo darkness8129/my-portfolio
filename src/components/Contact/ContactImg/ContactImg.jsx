@@ -1,13 +1,11 @@
 import React from 'react';
 import './ContactImg.scss';
+import contactImg from './../../../images/contactme.jpg';
 
 const ContactImg = () => {
     return (
         <div className='contact-img'>
-            <img
-                src='https://darkness8129.github.io/my-portfolio/images/contactme.jpg'
-                alt=''
-            />
+            <img src={contactImg} alt='Contact me' />
         </div>
     );
 };

@@ -3,49 +3,49 @@ import React from 'react';
 import pageTransition from '../../animationProps';
 import Title from '../Title/Title';
 import ProjectCard from './ProjectCard/ProjectCard';
+import calculatorImg from './../../images/projects/calculator.png';
+import matrixImg from './../../images/projects/matrixEffect.png';
+import notesAppImg from './../../images/projects/notesApp.png';
+import abiCompassImg from './../../images/projects/abiCompass.png';
+import axitImg from './../../images/projects/axit.png';
+import pexImg from './../../images/projects/pex.png';
 
 const projects = [
     {
         id: 1,
         title: 'Calculator',
         link: 'https://darkness8129.github.io/dark-calculator/',
-        img:
-            'https://darkness8129.github.io/my-portfolio/images/projects/calculator.png',
+        img: calculatorImg,
     },
     {
         id: 2,
         title: 'Matrix effect',
         link: 'https://darkness8129.github.io/matrix-effect/',
-        img:
-            'https://darkness8129.github.io/my-portfolio/images/projects/matrixEffect.png',
+        img: matrixImg,
     },
     {
         id: 3,
         title: 'Notes App',
         link: 'https://darkness8129.github.io/notes-app/',
-        img:
-            'https://darkness8129.github.io/my-portfolio/images/projects/notesApp.png',
+        img: notesAppImg,
     },
     {
         id: 4,
         title: 'Abi Compass',
         link: 'https://github.com/darkness8129/abi-compass',
-        img:
-            'https://darkness8129.github.io/my-portfolio/images/projects/abiCompass.png',
+        img: abiCompassImg,
     },
     {
         id: 5,
         title: 'Axit',
         link: 'https://github.com/darkness8129/Axit',
-        img:
-            'https://darkness8129.github.io/my-portfolio/images/projects/axit.png',
+        img: axitImg,
     },
     {
         id: 6,
         title: 'Pex',
         link: '#',
-        img:
-            'https://darkness8129.github.io/my-portfolio/images/projects/pex.png',
+        img: pexImg,
     },
 ];
 
