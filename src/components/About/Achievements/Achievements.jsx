@@ -14,13 +14,13 @@ const achievementsData = [
     },
     {
         id: 3,
-        number: 3,
-        title: 'Years in university',
+        number: 12,
+        title: 'Skills',
     },
     {
         id: 4,
-        number: 1,
-        title: 'Years of experience',
+        number: 3,
+        title: 'Years in university',
     },
 ];
 

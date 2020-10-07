@@ -10,7 +10,7 @@ const Experience = () => {
                     timeText='October 2019 - Present'
                     position='HTML/CSS Developer - '
                     company='Freelance'
-                    descrText='I was involved in the development of HTML
+                    descrText='Involved in the development of HTML
                             templates and writing styles and also dealt with
                             JS scripts.'
                 />

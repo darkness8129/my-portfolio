@@ -1,4 +1,7 @@
+@import './../../scss/fonts';
+
 .subtitle {
+    font-family: $accent-font;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 30px;

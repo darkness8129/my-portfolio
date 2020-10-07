@@ -30,7 +30,7 @@ const skillsData = [
     {
         id: 6,
         level: 65,
-        title: 'Redux',
+        title: 'SCSS',
     },
     {
         id: 7,

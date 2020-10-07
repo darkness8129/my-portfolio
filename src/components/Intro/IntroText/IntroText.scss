@@ -1,4 +1,9 @@
+@import './../../../scss/fonts';
 .text-block {
+    h1 {
+        font-family: $accent-font;
+    }
+
     p:first-child {
         margin: 10px 0;
         font-size: 25px;

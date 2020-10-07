@@ -17,11 +17,10 @@ const IntroText = () => {
                 </b>
             </h1>
             <p>
-                This is my small site and if you can call it that - my
-                portfolio. I study at KPI and want to work in the field of
-                frontend development. I have already taken several online
-                courses and obtained certificates. Also, I have good soft
-                skills. I am looking for a job as a front-end developer.{' '}
+                Looking for a job as a JUNIOR FRONT-END DEVELOPER. I create
+                projects with clean and supported code, improving my skills and
+                enjoying it. Ready to join the team and conquer web development
+                together:)
             </p>
             <Button link='/about'>About me</Button>
         </div>
