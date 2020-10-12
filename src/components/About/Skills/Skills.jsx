@@ -4,27 +4,27 @@ import Skill from './Skill/Skill';
 const skillsData = [
     {
         id: 1,
-        level: 80,
+        level: 90,
         title: 'HTML5',
     },
     {
         id: 2,
-        level: 80,
+        level: 90,
         title: 'CSS3',
     },
     {
         id: 3,
-        level: 70,
+        level: 80,
         title: 'JavaScript',
     },
     {
         id: 4,
-        level: 65,
+        level: 70,
         title: 'ReactJs',
     },
     {
         id: 5,
-        level: 65,
+        level: 70,
         title: 'Redux',
     },
     {

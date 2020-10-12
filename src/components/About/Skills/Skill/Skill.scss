@@ -4,6 +4,13 @@
 // if skill < 50 --> first gradient 90 + lvl * 3.6
 // if skill > 50 --> second gradient 90 + (lvl - 50) * 3.6
 
+.skill-90 {
+    @include skill(
+        linear-gradient(90deg, transparent 50%, $primary-color 50%),
+        linear-gradient(234deg, transparent 50%, $primary-color 50%)
+    );
+}
+
 .skill-80 {
     @include skill(
         linear-gradient(90deg, transparent 50%, $primary-color 50%),
@@ -46,16 +53,16 @@
     );
 }
 
-.skill-30 {
+.skill-40 {
     @include skill(
-        linear-gradient(198deg, transparent 50%, gray 50%),
+        linear-gradient(234deg, transparent 50%, gray 50%),
         linear-gradient(90deg, gray 50%, $primary-color 50%)
     );
 }
 
-.skill-40 {
+.skill-30 {
     @include skill(
-        linear-gradient(234deg, transparent 50%, gray 50%),
+        linear-gradient(198deg, transparent 50%, gray 50%),
         linear-gradient(90deg, gray 50%, $primary-color 50%)
     );
 }

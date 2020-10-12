@@ -15,7 +15,7 @@ const ContactText = () => {
                 part of your visions.
             </p>
             <ContactItem action='Mail me' info='yaroslaw460@gmail.com' />
-            <ContactItem action='Phone me' info='+380961952953' />
+            <ContactItem action='Phone me' info='+380961952963' />
             <SocialIcons />
         </div>
     );

@@ -6,9 +6,9 @@ import ProjectCard from './ProjectCard/ProjectCard';
 import calculatorImg from './../../images/projects/calculator.png';
 import matrixImg from './../../images/projects/matrixEffect.png';
 import notesAppImg from './../../images/projects/notesApp.png';
-import abiCompassImg from './../../images/projects/abiCompass.png';
-import axitImg from './../../images/projects/axit.png';
-import pexImg from './../../images/projects/pex.png';
+import confusionImg from './../../images/projects/confusion.png';
+import olloImg from './../../images/projects/ollo.png';
+import calendarImg from './../../images/projects/calendar.png';
 
 const projects = [
     {
@@ -31,21 +31,21 @@ const projects = [
     },
     {
         id: 4,
-        title: 'Abi Compass',
-        link: 'https://github.com/darkness8129/abi-compass',
-        img: abiCompassImg,
+        title: 'Calendar',
+        link: 'https://darkness8129.github.io/test-task-calendar/',
+        img: calendarImg,
     },
     {
         id: 5,
-        title: 'Axit',
-        link: 'https://github.com/darkness8129/Axit',
-        img: axitImg,
+        title: 'ConFusion',
+        link: 'https://github.com/darkness8129/confusion',
+        img: confusionImg,
     },
     {
         id: 6,
-        title: 'Pex',
-        link: '#',
-        img: pexImg,
+        title: 'Ollo',
+        link: 'https://github.com/darkness8129/ollo',
+        img: olloImg,
     },
 ];
 
