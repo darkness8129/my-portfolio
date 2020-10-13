@@ -13,9 +13,9 @@ function App() {
     const location = useLocation();
 
     return (
-        <div className="App">
+        <div className="app">
             <div className="container-fluid">
-                <div className="row" style={{ height: 100 + 'vh' }}>
+                <div className="row" >
                     <Header />
                     <div className="col-lg-12">
                         <AnimatePresence exitBeforeEnter>

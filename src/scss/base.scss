@@ -17,6 +17,17 @@ a {
     }
 }
 
+.app {
+    .container-fluid {
+        & > .row {
+            height: 100vh;
+            & > .col-lg-12 {
+                overflow: hidden;
+            }
+        }
+    }
+}
+
 .content {
     margin: 50px 0;
 }
