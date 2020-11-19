@@ -9,6 +9,9 @@ import notesAppImg from './../../images/projects/notesApp.png';
 import confusionImg from './../../images/projects/confusion.png';
 import olloImg from './../../images/projects/ollo.png';
 import calendarImg from './../../images/projects/calendar.png';
+import axitImg from './../../images/projects/axit.png';
+import regFormImg from './../../images/projects/registration-form.png';
+import toastsImg from './../../images/projects/toasts.png';
 
 const projects = [
     {
@@ -37,12 +40,31 @@ const projects = [
     },
     {
         id: 5,
+        title: 'Toasts',
+        link: 'https://darkness8129.github.io/custom-toasts/',
+        img: toastsImg,
+    },
+    {
+        id: 6,
+        title: 'Registration Form',
+        link: 'https://darkness8129.github.io/registration-form/',
+        img: regFormImg,
+    },
+    {
+        id: 7,
+        title: 'Axit',
+        link: 'https://darkness8129.github.io/axit-landing/',
+        img: axitImg,
+    },
+
+    {
+        id: 8,
         title: 'ConFusion',
         link: 'https://github.com/darkness8129/confusion',
         img: confusionImg,
     },
     {
-        id: 6,
+        id: 9,
         title: 'Ollo',
         link: 'https://github.com/darkness8129/ollo',
         img: olloImg,

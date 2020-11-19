@@ -9,18 +9,18 @@ const achievementsData = [
     },
     {
         id: 2,
-        number: 10,
+        number: 15,
         title: 'Projects',
     },
     {
         id: 3,
-        number: 12,
+        number: 20,
         title: 'Skills',
     },
     {
         id: 4,
-        number: 3,
-        title: 'Years in university',
+        number: 5,
+        title: 'Passed courses',
     },
 ];
 

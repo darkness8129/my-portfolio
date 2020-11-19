@@ -19,48 +19,93 @@ const skillsData = [
     },
     {
         id: 4,
-        level: 70,
-        title: 'ReactJs',
+        level: 80,
+        title: 'React',
     },
     {
         id: 5,
-        level: 70,
+        level: 80,
         title: 'Redux',
     },
     {
         id: 6,
-        level: 65,
-        title: 'SCSS',
+        level: 75,
+        title: 'Redux Thunk',
     },
     {
         id: 7,
-        level: 60,
-        title: 'Bootstrap',
+        level: 50,
+        title: 'Redux Form',
     },
     {
         id: 8,
-        level: 40,
-        title: 'jQuery',
+        level: 70,
+        title: 'React Router',
     },
     {
         id: 9,
-        level: 50,
-        title: 'Git',
+        level: 75,
+        title: 'React Hooks',
     },
     {
         id: 10,
-        level: 70,
-        title: 'npm/yarn',
+        level: 50,
+        title: 'Styled Components',
     },
     {
         id: 11,
-        level: 30,
-        title: 'node.js',
+        level: 80,
+        title: 'CSS-modules',
     },
     {
         id: 12,
         level: 70,
+        title: 'Sass/SCSS',
+    },
+    {
+        id: 13,
+        level: 80,
+        title: 'REST API',
+    },
+    {
+        id: 14,
+        level: 60,
+        title: 'Bootstrap',
+    },
+    {
+        id: 15,
+        level: 40,
+        title: 'jQuery',
+    },
+    {
+        id: 16,
+        level: 50,
+        title: 'Webpack',
+    },
+    {
+        id: 17,
+        level: 60,
+        title: 'Git',
+    },
+    {
+        id: 18,
+        level: 70,
+        title: 'npm/yarn',
+    },
+    {
+        id: 19,
+        level: 30,
+        title: 'node.js',
+    },
+    {
+        id: 20,
+        level: 70,
         title: 'VS Code',
+    },
+    {
+        id: 21,
+        level: 50,
+        title: 'Figma',
     },
 ];
 
